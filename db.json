@@ -1,0 +1,88 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "alice",
+      "fullName": "Alice Martin",
+      "avatarUrl": "https://i.pravatar.cc/150?img=1",
+      "bio": "Fan de Pokémon et de voyage"
+    },
+    {
+      "id": 2,
+      "username": "bob",
+      "fullName": "Bob Dupont",
+      "avatarUrl": "https://i.pravatar.cc/150?img=2",
+      "bio": "Photographe amateur"
+    },
+    {
+      "id": 3,
+      "username": "charlie",
+      "fullName": "Charlie Durand",
+      "avatarUrl": "https://i.pravatar.cc/150?img=3",
+      "bio": "Développeur mobile"
+    }
+  ],
+  "posts": [
+    {
+      "id": 201,
+      "userId": 1,
+      "imageUrl": "https://picsum.photos/id/1011/800/800",
+      "caption": "Balade en montagne",
+      "hashtags": ["nature", "voyage"],
+      "taggedUserIds": [2],
+      "createdAt": "2025-09-01T10:00:00Z"
+    },
+    {
+      "id": 202,
+      "userId": 2,
+      "imageUrl": "https://picsum.photos/id/1025/800/800",
+      "caption": "Mon chien 🐶",
+      "hashtags": ["pets"],
+      "taggedUserIds": [],
+      "createdAt": "2025-09-02T15:30:00Z"
+    },
+    {
+      "id": 203,
+      "userId": 3,
+      "imageUrl": "https://picsum.photos/id/1035/800/800",
+      "caption": "Nouveau projet en cours 👨‍💻",
+      "hashtags": ["code", "android"],
+      "taggedUserIds": [],
+      "createdAt": "2025-09-03T09:45:00Z"
+    }
+  ],
+  "comments": [
+    { "id": 3001, "postId": 201, "userId": 2, "content": "Super photo !", "createdAt": "2025-09-01T12:00:00Z" },
+    { "id": 3002, "postId": 201, "userId": 3, "content": "Ça donne envie 👍", "createdAt": "2025-09-01T13:00:00Z" },
+    { "id": 3003, "postId": 202, "userId": 1, "content": "Trop mignon 🐶", "createdAt": "2025-09-02T16:00:00Z" }
+  ],
+  "likes": [
+    { "id": 4001, "postId": 201, "userId": 2 },
+    { "id": 4002, "postId": 201, "userId": 3 },
+    { "id": 4003, "postId": 202, "userId": 1 }
+  ],
+  "follows": [
+    { "id": 5001, "followerId": 1, "followingId": 2, "createdAt": "2025-08-20T09:00:00Z" },
+    { "id": 5002, "followerId": 1, "followingId": 3, "createdAt": "2025-08-22T14:00:00Z" },
+    { "id": 5003, "followerId": 2, "followingId": 1, "createdAt": "2025-08-25T18:00:00Z" }
+  ],
+  "stories": [
+    { "id": 6001, "userId": 1, "mediaUrl": "https://picsum.photos/id/1041/500/800", "createdAt": "2025-09-07T08:00:00Z", "expiresAt": "2025-09-08T08:00:00Z" },
+    { "id": 6002, "userId": 2, "mediaUrl": "https://picsum.photos/id/1042/500/800", "createdAt": "2025-09-07T09:00:00Z", "expiresAt": "2025-09-08T09:00:00Z" }
+  ],
+  "bookmarks": [
+    { "id": 7001, "userId": 1, "postId": 202, "createdAt": "2025-09-05T11:00:00Z" },
+    { "id": 7002, "userId": 2, "postId": 201, "createdAt": "2025-09-06T14:30:00Z" }
+  ],
+  "threads": [
+    { "id": 8001, "createdAt": "2025-09-01T10:00:00Z" }
+  ],
+  "threadParticipants": [
+    { "id": 8101, "threadId": 8001, "userId": 1 },
+    { "id": 8102, "threadId": 8001, "userId": 2 }
+  ],
+  "messages": [
+    { "id": 8201, "threadId": 8001, "senderId": 1, "content": "Salut Bob !", "createdAt": "2025-09-01T10:05:00Z" },
+    { "id": 8202, "threadId": 8001, "senderId": 2, "content": "Hey Alice 👋", "createdAt": "2025-09-01T10:06:00Z" }
+  ]
+}
