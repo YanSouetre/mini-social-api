@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "json-server --watch db.json --port $PORT --routes routes.json --delay 250"
+    "start": "json-server --host 0.0.0.0 --watch db.json --port $PORT --routes routes.json --delay 250"
   },
   "dependencies": {
     "json-server": "^0.17.4"
