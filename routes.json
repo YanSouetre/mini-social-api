@@ -6,5 +6,6 @@
   "/posts/:id/comments": "/comments?postId=:id&_sort=createdAt&_order=asc",
   "/posts/:id/likes": "/likes?postId=:id",
   "/threads/:id/messages": "/messages?threadId=:id&_sort=createdAt&_order=asc",
-  "/users/:id/threads": "/threadParticipants?userId=:id"
+  "/users/:id/threads": "/threadParticipants?userId=:id",
+  "/users/:id/stories": "/stories?userId=:id&_sort=createdAt&_order=desc"
 }
